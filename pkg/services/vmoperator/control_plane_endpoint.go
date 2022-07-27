@@ -155,7 +155,6 @@ func (s CPService) createVMControlPlaneService(ctx *vmware.ClusterContext, annot
 				vmService.Annotations[k] = v
 			}
 		}
-		vmService.Annotations = annotations
 		vmService.Spec = vmoprv1.VirtualMachineServiceSpec{
 			Type: serviceType,
 			Ports: []vmoprv1.VirtualMachineServicePort{
